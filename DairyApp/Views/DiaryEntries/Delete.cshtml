@@ -1,0 +1,27 @@
+﻿@model DiaryEntry
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2>Delete Diary Entry</h2>
+                </div>
+                <div class="card-body">
+                    <p>Do you really want to delete this diary?</p>
+
+                    <h4 class="text-danger">@Model.Title</h4>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <a asp-controller="DiaryEntries" asp-action="Index" class="btn btn-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+# Ignore appsettings.json (real configuration)
+appsettings.json
+
+# Include appsettings.example.json (sample configuration)
+!appsettings.example.json
+
+# Ignore build folders and files
+bin/
+obj/
+
+# Ignore user-specific files and IDE files
+*.user
+*.suo
+*.userosscache
+
+# Ignore IDE settings
+.vs/
+
+# Ignore log files
+*.log
